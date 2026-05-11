@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Pages Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    .box {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 500px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: #0077ff;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #f0f0f0;
+    }
+
+    #time {
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>GitHub Pages Test ✅</h1>
+    <p>Agar ye page open ho raha hai, to aapka deploy successful hai.</p>
+    <button onclick="showTime()">Click Me</button>
+    <div id="time"></div>
+  </div>
+
+  <script>
+    function showTime() {
+      const now = new Date();
+      document.getElementById("time").innerText =
+        "Current Time: " + now.toLocaleTimeString();
+    }
+  </script>
+</body>
+</html>
